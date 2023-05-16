@@ -535,11 +535,12 @@ border-color: transparent white transparent transparent;
   height:425px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content:left;
   border: 2px;
 }
 .exploreimg{
   width: 217px;
+  gap:10px;
   padding-top: 10px;
 }
 .rating{
@@ -547,6 +548,7 @@ border-color: transparent white transparent transparent;
 }
 #explore .row{
   padding-top: 30px;
+
 
 }
 .number-wrapper {
@@ -751,7 +753,7 @@ em{
 
 /*footer*/
 footer{
-  height:500px;
+  height:autopx;
   background-color: black;
   padding-top: 20px;
 }
