@@ -1016,8 +1016,8 @@ transform: translateX(-50%);
   max-height: 400px;
 }
 .panel-group{
-  width:900px;
-  padding-left: 200px;
+  width:auto;
+  padding-left: 5%;
 }
 
 .panel-default {
