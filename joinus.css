@@ -345,7 +345,7 @@ footer{
 }
 
 
-.below-footer{
+/* .below-footer{
   background-color: black;
   display: inline-flex;
   align-items: center;
@@ -370,4 +370,48 @@ footer{
 }
 .bfp{
   color: white;
+} */
+.below-footer {
+  background-color: #003A70;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+.privacypolicy{
+  margin-right: 100px;
+  
+}
+.bfp {
+  margin: 0;
+  font-size: 14px;
+  text-align: left;
+  margin-left: 100px;
+}
+
+.bfll,
+.bflr {
+  color: white;
+  text-decoration: none;
+  
+}
+
+.bfll:hover,
+.bflr:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .below-footer {
+    flex-direction: column;
+  }
+  
+  .bfll,
+  .bflr {
+    margin-top: 5px; /* Adjust the margin value as desired */
+  }
+}
+
+
