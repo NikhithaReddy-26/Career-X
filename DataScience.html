@@ -20,8 +20,8 @@
    <!-- navbar -->
    <nav class="navbar navbar-expand-lg bg-body-tertiary">
  <div class="container-fluid">
-   <img class="logo1" src="public/careerx_white logo 1.png" alt="" height="50px">
-   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+   <a href="index.html"><img class="logo1" src="public/careerx_white logo 1.png" alt="" height="50px">
+   </a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
      <span class="navbar-toggler-icon"></span>
    </button>
    <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -43,7 +43,7 @@
          <a class="nav-link" href="https://blog.careerx.club/">Blogs</a>
        </li>
        <li class="nav-item">
-         <a class="nav-link" href="#">Login</a>
+         <a class="nav-link" href="https://academy.careerx.club/account/login">Login</a>
        </li>
        <li class="nav-item">
          <a href="joinus.html" class="btn btn-outline-light" tabindex="-1" role="button" aria-disabled="true">Join Our Club</a>
@@ -98,7 +98,8 @@
  </section>
 <!-- why fullstack -->
 <section id="whyfullstack">
-  <div class="whyfullstack">
+  <img src="public/Why Data Science.svg" alt="">
+  <!-- <div class="whyfullstack">
    <h3 class="whyfullstack"><img  src="public/Frame 16.png" alt=""></h3>
    <div class="container">
     <div class="image">
@@ -147,7 +148,7 @@
     </div>
 
 
-  </div>
+  </div> -->
 </section>
 <!-- roadmap -->
 <section id="roadmap">
@@ -268,6 +269,24 @@
          </ul>
        </div>
      </div>
+   </div>
+   <div class="row">
+
+     <div class="col-md-4">
+       <div class="dropdown">
+         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+           Level Up Programming
+         </button>
+         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+           <li><a class="dropdown-item" href="#">Introduction to ML & Deep Learning</a></li>
+           <!-- <li><a class="dropdown-item" href="#">Fundamentals of Web</a></li>
+           <li><a class="dropdown-item" href="#">Fundamentals of Web</a></li>
+           <li><a class="dropdown-item" href="#">Fundamentals of Web</a></li>
+           <li><a class="dropdown-item" href="#">Fundamentals of Web</a></li>
+           <li><a class="dropdown-item" href="#">Fundamentals of Web</a></li> -->
+         </ul>
+       </div>
+     </div>
      <div class="col-md-4">
        <div class="dropdown">
          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
@@ -286,6 +305,9 @@
    </div>
  </div>
 
+
+
+</div>
  <div class="button-container">
    <button class="neon-button">Download the Full Brochure</button>
  </div>
@@ -301,36 +323,36 @@
    <div class="card-container">
      <div class="cards">
        <div class="card">
+         <img class="card-title" src="public/amazon-prime.svg" alt="">
+         <b> <p class="card-content">Prime Video Movie Recommender</p> </b>
+       </div>
+       <div class="card">
+         <img class="card-title" src="public/chatbot.png" alt="">
+        <b>  <p class="card-content">Chat Bot Using NLP</p> </b>
+       </div>
+       <div class="card">
+         <img class="card-title" src="public/twitter.svg" alt="">
+         <b> <p class="card-content">Twitter Sentimental Analysis</p> </b>
+       </div>
+       <div class="card">
+         <img class="card-title" src="public/spotify.svg" alt="">
+        <b> <p class="card-content">Spotify Music Recommender</p> </b>
+       </div>
+       <!-- <div class="card">
          <h3 class="card-title">Card 1</h3>
          <p class="card-content">Content for card 1 goes here</p>
        </div>
        <div class="card">
          <h3 class="card-title">Card 2</h3>
          <p class="card-content">Content for card 2 goes here</p>
-       </div>
-       <div class="card">
-         <h3 class="card-title">Card 3</h3>
-         <p class="card-content">Content for card 3 goes here</p>
-       </div>
-       <div class="card">
-         <h3 class="card-title">Card 4</h3>
-         <p class="card-content">Content for card 4 goes here</p>
-       </div>
-       <div class="card">
-         <h3 class="card-title">Card 1</h3>
-         <p class="card-content">Content for card 1 goes here</p>
-       </div>
-       <div class="card">
-         <h3 class="card-title">Card 2</h3>
-         <p class="card-content">Content for card 2 goes here</p>
-       </div>
+       </div> -->
      </div>
    </div>
 
 </div>
 </section>
 <!-- projects Students -->
-<section id="pStudent">
+<!-- <section id="pStudent">
   <div class="pStudents">
    <h3 class="pStudent-heading"><img  src="public/Frame 12.png" alt=""></h3>
    <div class="card-container">
@@ -364,15 +386,22 @@
 
 
   </div>
-</section>
+</section> -->
 <!-- fee -->
 <section id="fee">
-  <div class="fees">
-    <h3 class="fee-heading"><img  src="public/Frame 5.png" alt=""></h3>
+  <div class="fees-img">
+    <label for="popup-checkbox">
+  <img class="fee-heading"src="public/Frame 5.png" alt="Thumbnail Image">
+  </label>
+<input type="checkbox" id="popup-checkbox">
+<div class="popup">
+  <label for="popup-checkbox" class="close-button">&times;</label>
+  <img src="public/Frame 20.svg" alt="Popup Image">
+</div>
   </div>
   <div class="fee-container">
-    <img class="fee-img" src="public/Group 13.svg" alt="">
     <img class="fee-img" src="public/Group 14.svg" alt="">
+    <img class="fee-img" src="public/Group 13.svg" alt="">
     <img class="fee-img" src="public/Group 15.svg" alt="">
   </div>
 </section>
@@ -385,19 +414,19 @@
       <div class="cards">
         <div class="mentor-card">
           <div class="mentor-img">  <img class="mentor-img" src="public/Group 20.png" alt=""> </div>
-          <h5 class="mentor-name">John Doe</h5>
-          <p class="mentor-role">CE</p>
-          <p>Company Name</p>
+          <h5 class="mentor-name">Harish Kumar</h5>
+          <p class="mentor-role">Senior Data Scientist</p>
+          <p class="mentor-role">An Innovative IT professional with 7+ years of experience in Deep Learning and AI, Computer Vision, Data Visualization, Image Processing, Integration Development and Agile method logies</p>
           <img src="public/linkedin.png" alt="">
         </div>
         <div class="mentor-card">
           <div class="mentor-img"><img class="mentor-img" src="public/Group 20.png" alt=""></div>
-          <h5 class="mentor-name">Jane Doe</h5>
-          <p class="mentor-role">CTO</p>
-          <p>Company Name</p>
+          <h5 class="mentor-name">Mr. Bipul Shahi</h5>
+          <p class="mentor-role">Corporate trainer on AI, IOT, Apps and website development & Robotics with and experience of 4.5 years.</p>
+          <!-- <p>Company Name</p> -->
           <img src="public/linkedin.png" alt="">
         </div>
-        <div class="mentor-card">
+        <!-- <div class="mentor-card">
           <div class="mentor-img"><img class="mentor-img" src="public/Group 20.png" alt=""></div>
           <h5 class="mentor-name">Bob Smith</h5>
           <p class="mentor-role">Lead Developer</p>
@@ -410,7 +439,7 @@
           <p class="mentor-role">UX Designer</p>
           <p>Company Name</p>
           <img src="public/linkedin.png" alt="">
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -578,9 +607,9 @@
     </div>
   </div>
   <div class="footer-divider"></div>
-  <div class=" below-footer">
-    <p class="bfp">© 2023 CareerX.Club.All Rights Reserved | Colosseum CQ Solutions Pvt.Ltd</p>  <div class="privacypolicy"> <a class="bfll" href="#">Privacy Policy</a> | <a class="bflr" href="#">Terms and Conditions</a>
-</div>  </div>
+  <div class="below-footer">
+    <p class="bfp">© 2023 CareerX.Club.All Rights Reserved | Colosseum CQ Solutions Pvt.Ltd</p>   <a class="bfll" href="#">Privacy Policy</a>  <a class="bflr" href="#">Terms and Conditions</a>
+  </div>
 </footer>
   </body>
 </html>
