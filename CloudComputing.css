@@ -544,9 +544,9 @@ body, html {
    margin: 0 auto;
 }
 #course .row{
-  width:1500px;
-  padding-right: 200px;
-  /* padding-left: -20px; */
+  width:150%;
+  height: 280px;
+  padding-left: 7%;
 }
 .course-heading{
   padding-bottom: 40px;
