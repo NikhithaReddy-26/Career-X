@@ -72,7 +72,7 @@ body {
   }
 }
 
-#intro{
+/* #intro{
   background-color: black;
   color: white;
   height: 580px;
@@ -100,7 +100,7 @@ body {
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: -webkit-fill-available;
   padding: 10px;
   text-align: left;
   padding-left: 50px;
@@ -143,6 +143,143 @@ body {
 }
 html {
   scroll-behavior: smooth;
+} */
+body, html {
+  overflow-x: hidden;
+}
+
+#intro {
+  background-color: black;
+  color: white;
+  height: 580px;
+}
+
+#intro h1 {
+  font-size: 85px;
+  padding-right: 10px;
+}
+
+#intro a {
+  text-decoration: none;
+  color: white;
+}
+
+.intro-img {
+  width: 508px;
+  height: 390px;
+  margin-bottom: 100px;
+}
+
+.right-img img {
+  border-radius: 20px;
+}
+
+.queries {
+  height: 70px;
+  background-color: #232323;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  padding-left: 50px;
+  z-index: 9999;
+}
+
+.right-text {
+  float: right;
+  padding-right: 100px;
+  border-bottom: 30px;
+}
+
+.whatsappsvg {
+  width: 40px;
+  height: 40px;
+  padding-bottom: 5px;
+}
+
+#intro p {
+  padding-left: 10px;
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.left-image {
+  padding-left: 40px;
+  font-size: 100px;
+}
+
+.text-container {
+  align-items: left;
+  padding-top: 30px;
+  width: 1000px;
+}
+
+.text {
+  font-size: 30px;
+}
+
+.text-container a {
+  position: relative;
+  float: left;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Media Queries for Responsiveness */
+
+@media screen and (max-width: 768px) {
+  /* Adjustments for small screens */
+  #intro h1 {
+    font-size: 60px;
+  }
+  
+  .intro-img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .right-text {
+    padding-right: 30px;
+  }
+  
+  .text-container {
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+  .text {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Adjustments for extra small screens */
+  #intro h1 {
+    font-size: 40px;
+  }
+  
+  .intro-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+  }
+  
+  .right-text {
+    padding-right: 20px;
+  }
+  
+  .text-container {
+    width: 100%;
+    padding: 0 10px;
+  }
+  
+  .text {
+    font-size: 20px;
+  }
 }
 
 
@@ -159,10 +296,10 @@ html {
   color: white;
 }
 .whyus-container{
-  width: 1200px;
+  width: 100%;
 }
 .whyus-img{
-  width:1520px;
+  width:100%;
 }
 
 .timeline {
@@ -231,9 +368,9 @@ border-color: transparent white transparent transparent;
 
 
 /*webinars*/
-#webinars{
+/* #webinars{
   background-image: linear-gradient(black,#003A70,black);
-  height: 800px;
+  height: auto;
 }
 
 .webinar-heading{
@@ -242,15 +379,17 @@ border-color: transparent white transparent transparent;
   padding-top: 150px;
   color: white;
 }
-
-#webinars .carousel-item{
-  padding-left: 200px;
+.webinar-container{
+  padding-left: 20px;
 }
-#webinars .card {
+/* #webinars .carousel-item{
+  padding-left: 200px;
+} */
+/* #webinars .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 370px;
   margin: 10px;
   border-radius: 20px;
 }
@@ -260,8 +399,8 @@ border-color: transparent white transparent transparent;
 }
 
 #webinars .card-img-top {
-  width: 150;
-  height: 210px;
+  width: 100;
+  height: 180px;
   object-fit: cover;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -294,7 +433,120 @@ border-color: transparent white transparent transparent;
 #webinars .btn-outline-dark:hover {
   background-color: #343a40;
   color: #fff;
+} */
+/* 
+.gal { */
+  /* width: 80%; */
+  /* margin: 100px auto 50;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
 }
+.gal card {
+  width: 100%;
+  cursor: pointer;
+} */ 
+
+#webinars {
+  background-image: linear-gradient(black, #003A70, black);
+  height: auto;
+}
+
+.webinar-heading {
+  padding-left: 105px;
+  padding-bottom: 10px;
+  padding-top: 150px;
+  color: white;
+}
+
+.webinar-container {
+  padding-left: 20px;
+}
+
+#webinars .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 300px;
+  height: 370px;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+#webinars .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+#webinars .card-img-top {
+  width: 100;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-radius: 40px;
+  padding: 20px 20px 20px 20px;
+}
+
+#webinars .card-body {
+  padding: 0px 10px 20px 20px;
+}
+
+#webinars .card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#webinars .card-text {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#webinars .btn-outline-dark {
+  background-color: transparent;
+  color: #343a40;
+  border-color: #343a40;
+  transition: all 0.3s ease;
+}
+
+#webinars .btn-outline-dark:hover {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.gal {
+  margin: 100px auto 50;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+
+/* Media Queries for Responsiveness */
+
+@media screen and (max-width: 768px) {
+  .webinar-heading {
+    padding-left: 30px;
+    padding-top: 80px;
+  }
+  
+  .webinar-container {
+    padding-left: 10px;
+  }
+  
+  #webinars .card {
+    width: 100%;
+  }
+  
+  #webinars .card-img-top {
+    border-radius: 10px;
+  }
+}
+
+
+
+
+
+
+
 
 
 
@@ -469,6 +721,7 @@ em{
   color:white;
 }
 
+
 /*testimonial*/
 #testimonial{
     background-image: linear-gradient(black,#003A70,black);
@@ -480,27 +733,30 @@ em{
   padding-bottom: 10px;
 }
 .testimonials-container {
-  width: 100%;
+  /* width: 100%; */
   overflow: hidden;
 }
 
 .testimonials-wrapper {
   display: flex;
   flex-wrap: nowrap;
-  animation: scroll 10s linear infinite;
+  animation: scroll 20s linear infinite;
   animation-direction: alternate;
-}
-.testimonials-card {
-  display: flex;
-  flex-direction: column;
+} 
+ .testimonials-card {
+  display: inline-block;
+  width:550px;
+  height: 350px;
+  flex-direction: row; 
+  margin-right: 20px;
   border: 1px solid #ccc;
   padding: 20px;
   border-radius: 20px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  animation: scroll 10s linear infinite;
-  animation-direction: alternate;
+   animation: scroll 10s linear infinite;
+  animation-direction: alternate; 
   background-color:white;
-}
+} 
 
 .top {
   display: flex;
@@ -532,7 +788,7 @@ em{
   margin-top: 20px;
 }
 
-/* .testimonials-card {
+.testimonials-card {
   width: 100%;
   padding: 20px;
   display: flex;
@@ -549,7 +805,7 @@ em{
   object-fit: cover;
   margin-bottom: 20px;
   padding-right: 10px;
-} */
+}
 
 
 @keyframes scroll {
@@ -569,9 +825,9 @@ em{
 
 /*footer*/
 footer{
-  height:500px;
+  height:auto;
   background-color: black;
-  padding-top: 20px:
+  padding-top: 20px;
 }
 .text-white{
   text-decoration: none;
@@ -589,29 +845,46 @@ footer{
 }
 
 
-.below-footer{
-  background-color: black;
-  display: inline-flex;
+.below-footer {
+  background-color: #000000;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  width:100%;
+}
+.privacypolicy{
+  margin-right: 100px;
+  
+}
+.bfp {
+  margin: 0;
+  font-size: 14px;
+  text-align: left;
+  margin-left: 100px;
+}
 
-}
-.bfp{
-  padding-left: 40px;
-}
-.bfll{
-  padding-bottom: 17px;
-  padding-left: 400px;
+.bfll,
+.bflr {
+  color: white;
   text-decoration: none;
-  color: white;
+  
 }
-.bflr{
-  padding-bottom: 17px;
-  padding-right: 240px;
-  padding-left: 30px;
-  text-decoration: none;
-  color: white;
+
+.bfll:hover,
+.bflr:hover {
+  text-decoration: underline;
 }
-.bfp{
-  color: white;
+
+@media (max-width: 768px) {
+  .below-footer {
+    flex-direction: column;
+  }
+  
+  .bfll,
+  .bflr {
+    margin-top: 5px; /* Adjust the margin value as desired */
+  }
 }
+

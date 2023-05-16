@@ -39,19 +39,7 @@
 }
 
 
-/*blackbox*/
-/* #blackbox{
-  background-image: linear-gradient(#003A70,black);
-  padding-top: 50px;
-}
 
-.box {
-  height: 302px;
-  background-color: black;
-  border-radius: 25px;
-  border:1.5px solid white;
-
-} */
 #blackbox {
   background-image: linear-gradient(#003A70, black);
   padding-top: 50px;
@@ -91,61 +79,7 @@
 
 
 /*activities*/
-/* #activities{
-  background-image: linear-gradient(black,#003A70);
-  height: 30rem;
- color:white;
-}
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 800px;
-  margin: 0 auto;
-}
 
-.card {
-  width: 48%;
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 20px;
-}
-
-.card-img-top {
-  width: 350px;
-  margin-right: 5px;
-  border-radius: 20px;
-}
-
-.card-body {
-  flex: 1;
-}
-
-.card-body h5 {
-  margin-bottom: 10px;
-}
-
-.card-body p {
-  margin-bottom: 20px;
-}
-
-.card-body a {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-@media (max-width: 767px) {
-  .card {
-    width: 100%;
-  }
-} */
 
 #activities {
   background-image: linear-gradient(black, #003A70);
@@ -345,32 +279,6 @@ footer{
 }
 
 
-/* .below-footer{
-  background-color: black;
-  display: inline-flex;
-  align-items: center;
-  width:100%;
-
-}
-.bfp{
-  padding-left: 40px;
-}
-.bfll{
-  padding-bottom: 17px;
-  padding-left: 400px;
-  text-decoration: none;
-  color: white;
-}
-.bflr{
-  padding-bottom: 17px;
-  padding-right: 240px;
-  padding-left: 30px;
-  text-decoration: none;
-  color: white;
-}
-.bfp{
-  color: white;
-} */
 .below-footer {
   background-color: #000000;
   padding: 20px;
