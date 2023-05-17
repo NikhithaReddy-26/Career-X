@@ -18,7 +18,7 @@ body, html {
   padding-left: 10px;
 }
 .navbar{
-  height: 80px;
+  height: auto;
   background-color: black !important;
 }
 .navbar .dropdown-menu{
@@ -57,7 +57,9 @@ body, html {
 
 .navbar .btn-outline-light {
   position: relative;
-
+}
+.navbar-toggler-icon {
+  color: #ffffff !important;
 }
 /* intro */
 #intro{
@@ -66,6 +68,15 @@ body, html {
   margin-top: -20px
 }
 
+.intro-container{
+  width: 100%;
+}
+.intro-img{
+  width: 90%;
+  height: auto;
+  padding-top: 50px;
+  padding-left: 120px;
+}
 .col-md-12 {
   text-align: center;
   padding-top: 50px;
@@ -217,11 +228,11 @@ body, html {
 /* why full stack */
 #whyfullstack{
   background-image: linear-gradient(black,#003A70,black);
-  height: 700px;
+  height: auto;
   margin-top: -20px
 }
 #whyfullstack img{
-  width: 1520px;
+  width: 100%;
 }
 .why-full-stack {
   position: absolute;
@@ -383,7 +394,8 @@ body, html {
   }
 
 #roadmap  .card {
-    width: 200px;
+    width: 180px;
+    height: 150px;
     margin: 10px;
     position: relative;
     display: flex;
@@ -401,7 +413,7 @@ body, html {
     bottom: 50%;
     left: calc(100% + 10px);
     transform: translateY(50%);
-    width: 100px;
+    width: 130px;
     height: 2px;
     background-image: linear-gradient(to right, white 30%, transparent 0%);
     background-position: bottom;
@@ -439,8 +451,8 @@ body, html {
 } */
 
 #roadmap .card img {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   margin: 20px auto 0;
   display: block;
 }
@@ -457,7 +469,7 @@ body, html {
 /* tools */
 #tool{
   background-image: linear-gradient(black,#003A70,black);
-  height: 400px;
+  height: 500px;
   margin-top: -20px
 }
 #tool img{
@@ -547,7 +559,7 @@ body, html {
 /* course */
 #course{
   background-color: black;
-  height: 700px;
+  height: auto;
   margin-top: -20px
 }
 #course img{
@@ -555,14 +567,18 @@ body, html {
    margin: 0 auto;
 }
 #course .row{
-  width:150%;
-  height: 280px;
-  padding-left: 7%;
+  width:100%;
+  height: auto;
+  padding-bottom: 120px;
+  padding-left: auto;
+  /* padding-right: 200px; */
 }
+
 .course-heading{
   padding-bottom: 40px;
 }
 #course .container{
+  width:100%;
   height: 200px;
   padding-left: 60px;
 }
@@ -619,7 +635,7 @@ body, html {
 
 .button-container {
   text-align: center;
-  padding-top: 280px;
+  padding-top: 12%;
 }
 
 .neon-button {
@@ -651,25 +667,22 @@ body, html {
 
 
 /* projects */
-#project {
-  background-image: linear-gradient(black, #003A70, black);
+#project{
+  background-image: linear-gradient(black,#003A70,black);
   height: 500px;
-  margin-top: -20px;
+  margin-top: -20px
 }
-
-#project img {
-  display: block;
-  margin: 0 auto;
+#project img{
+   display: block;
+   margin: 0 auto;
 }
-
-.project-heading {
+.project-heading{
   padding-bottom: 40px;
 }
-
 #project .card-container {
-  overflow-x: auto;
+  overflow-x:auto;
   white-space: nowrap;
-  height: 300px; /* Adjust the height as needed */
+  height:300px;
   margin: 0 auto;
 }
 
@@ -677,6 +690,9 @@ body, html {
   display: flex;
   width: fit-content;
   padding-left: 12%;
+  /* animation: scroll 15s linear infinite; */
+  /* width:300px; */
+
 }
 
 #project .card {
@@ -693,34 +709,32 @@ body, html {
 }
 
 #project .card-title {
-  width: 150px;
-  height: 100px;
+  width:150px;
+  height:100px;
   margin-top: 10px;
 }
+#project .card-title-2{
 
-#project .card-title-2 {
-  width: 150px;
-  height: 70px;
+  width:150px;
+  height:70px;
   margin-top: 30px;
   margin-bottom: 10px;
 }
 
-#project .card-right-title {
-  width: 50px;
-  height: 50px;
+#project .card-right-title{
+  width:50px;
+  height:50px;
 }
 
-#project .card .card-content {
+#project  .card .card-content{
   text-align: center;
   font-size: 20px;
 }
-
 @media screen and (max-width: 768px) {
   #project .cards {
     padding-left: 0;
   }
 }
-
 /* @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -883,7 +897,8 @@ width: 100%;
 }
 
 #mentor .mentor-card {
-width: 300px;
+width: 340px;
+height:340px;
 background-color: #fff;
 border-radius: 30px;
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -901,14 +916,14 @@ margin-bottom: 20px;
 }
 
 #mentor .mentor-name {
-font-size: 24px;
+font-size: 20px;
 font-weight: 700;
 margin-bottom: 5px;
 text-align: center;
 }
 
 #mentor .mentor-role {
-font-size: 18px;
+font-size: 14px;
 color: #555;
 margin-bottom: 20px;
 text-align: center;
