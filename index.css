@@ -629,7 +629,7 @@ em{
 
 /*footer*/
 footer{
-  height:500px;
+  height:auto;
   background-color: black;
   padding-top: 20px;
 }
@@ -649,29 +649,45 @@ footer{
 }
 
 
-.below-footer{
-  background-color: black;
-  display: inline-flex;
+.below-footer {
+  background-color: #000000;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  width:100%;
+}
+.privacypolicy{
+  margin-right: 100px;
+  
+}
+.bfp {
+  margin: 0;
+  font-size: 14px;
+  text-align: left;
+  margin-left: 100px;
+}
 
-}
-.bfp{
-  padding-left: 40px;
-}
-.bfll{
-  padding-bottom: 17px;
-  padding-left: 400px;
+.bfll,
+.bflr {
+  color: white;
   text-decoration: none;
-  color: white;
+  
 }
-.bflr{
-  padding-bottom: 17px;
-  padding-right: 240px;
-  padding-left: 30px;
-  text-decoration: none;
-  color: white;
+
+.bfll:hover,
+.bflr:hover {
+  text-decoration: underline;
 }
-.bfp{
-  color: white;
+
+@media (max-width: 768px) {
+  .below-footer {
+    flex-direction: column;
+  }
+  
+  .bfll,
+  .bflr {
+    margin-top: 5px; /* Adjust the margin value as desired */
+  }
 }
