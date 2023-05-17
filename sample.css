@@ -70,10 +70,9 @@ body, html {
   height:380px;
   padding-left: 60px;
   padding-top: 50px;
-  display: flex;
 }
 
-/* @keyframes move-down {
+@keyframes move-down {
   from {
     top: 0;
   }
@@ -99,7 +98,7 @@ body, html {
     transform: translateY(0);
     opacity: 1;
   }
-} */
+}
 
 
 #intro{
@@ -124,35 +123,6 @@ body, html {
   border-radius: 20px;
   /* width: auto; */
   /* padding-left: 20px; */
-}
-@media (max-width: 767px) {
-  .intro-text {
-    flex-direction: column;
-  }
-
-  .home-intro,
-  .right-img {
-    width: 100%;
-  }
-
-  .right-img {
-    justify-content: center;
-    align-items: center;
-  }
-
-  .text-container {
-    text-align: center;
-    margin-top: 20px;
-  }
-
-  .text-container nav {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .text-container nav a {
-    margin-bottom: 10px;
-  }
 }
 
 .queries {
@@ -236,33 +206,8 @@ body, html {
   }
 }
 
-#intro p{
-  padding-left: 10px;
-  padding-top: 10px;
-  font-size: 20px;
-}
-.left-image{
-  padding-left: 40px;
-  font-size: 100px;
-}
-.text-container{
 
- align-items: left;
- padding-top: 30px;
- width: 1000px;
-}
-.text{
-  font-size: 30px;
-}
 
-.text-container a {
-  position: relative;
-  float: left;
-
-}
-html {
-  scroll-behavior: smooth;
-}
 
 
 
@@ -270,7 +215,7 @@ html {
 #whyus{
   /* background-image: linear-gradient(black,#003A70,black); */
   background-color: black;
-  height: auto;
+  height: 650px;
 }
 
 .whyus-heading{
@@ -358,7 +303,7 @@ border-color: transparent white transparent transparent;
 .webinar-heading{
   padding-left: 105px;
   padding-bottom: 10px;
-  padding-top: 90px;
+  padding-top: 150px;
   color: white;
 }
 .webinar-container{
@@ -462,8 +407,7 @@ border-color: transparent white transparent transparent;
   height:auto;
   color: white;
   border-color: white;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 80px;
   border-radius: 20px;
 }
 #featured .card-img-top{
@@ -643,72 +587,7 @@ em{
 
 
 /*testimonial*/
-#testimonials{
-  height:auto;
- background-image: linear-gradient(black,#003A70,black);
- color:white;
-}
-.testimonials-heading{
-  padding-left: 105px;
-  padding-top: 80px;
-  padding-bottom: 10px;
-}
-#testimonials .card{
-  width:23.3rem;
-  height:16.5rem;
-  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
-}
-#testimonials .card-container {
-  display: flex;
-  flex-wrap: nowrap;
-}
-#testimonials .card-img-top{
-  width:77px;
-  height:78px;
-}
-#testimonials .container-fluid{
-  padding: 2% 15%;
-}
-#testimonials h2{
-  text-align: right;
-}
-
-#testimonials .person-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-#testimonials .person-image {
-  flex: 0 0 20%; /* Adjust value to control image width */
-  margin-right: 35px; /* Adjust value to control spacing between image and details */
-}
-
-#testimonials .person-image img {
-  display: block;
-  max-width: 200px;
-  height: 150px;
-  margin:20px;
-}
-
-#testimonials .person-details {
-  flex: 1;
-}
-
-#testimonials .person-name {
-  font-size: 24px;
-  margin-top: 0;
-}
-
-#testimonials .person-title {
-  font-size: 18px;
-  margin-top: 5px;
-}
-
-#testimonials .person-content {
-  margin-top: 10px;
-}
-/* #testimonial{
+#testimonial{
     background-image: linear-gradient(black,#003A70,black);
     height: 700px;
 }
@@ -728,20 +607,20 @@ em{
   animation: scroll 40s linear infinite;
   /* animation-direction: alternate; */
 }
-/* .testimonials-card {
+.testimonials-card {
   display: inline-block;
   width:550px;
-  height: auto; */
+  height: auto;
   /* flex-direction: row; */
-  /* margin-right: 20px;
+  margin-right: 20px;
   border: 1px solid #ccc;
   padding: 20px;
   border-radius: 20px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   /* animation: scroll 10s linear infinite;
-  /* animation-direction: alternate; */
-  /* background-color:white;  */
-/* }
+  animation-direction: alternate; */
+  background-color:white;
+}
 
 .top {
   display: flex;
@@ -771,7 +650,7 @@ em{
 
 .bottom {
   margin-top: 20px;
-} */
+}
 
 /* .testimonials-card {
   width: 100%;
@@ -793,14 +672,14 @@ em{
 } */
 
 
-/* @keyframes scroll {
+@keyframes scroll {
   0% {
     transform: translateX(100%);
   }
   100% {
     transform: translateX(-100%);
   }
-} */
+}
 
 .section-divider{
   background-color: white;
@@ -842,7 +721,7 @@ footer{
 }
 .privacypolicy{
   margin-right: 100px;
-
+  
 }
 .bfp {
   margin: 0;
@@ -855,7 +734,7 @@ footer{
 .bflr {
   color: white;
   text-decoration: none;
-
+  
 }
 
 .bfll:hover,
@@ -867,7 +746,7 @@ footer{
   .below-footer {
     flex-direction: column;
   }
-
+  
   .bfll,
   .bflr {
     margin-top: 5px; /* Adjust the margin value as desired */

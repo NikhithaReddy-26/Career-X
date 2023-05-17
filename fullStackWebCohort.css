@@ -64,7 +64,7 @@ body, html {
 /* intro */
 #intro{
   background-color: black;
-  height: 600px;
+  height: auto;
   margin-top: -20px
 }
 
@@ -76,6 +76,7 @@ body, html {
   height: auto;
   padding-top: 50px;
   padding-left: 120px;
+  padding-bottom: 50px;
 }
 .col-md-12 {
   text-align: center;
@@ -559,7 +560,7 @@ body, html {
 /* course */
 #course{
   background-color: black;
-  height: auto;
+  height: 700px;
   margin-top: -20px
 }
 #course img{
@@ -567,7 +568,7 @@ body, html {
    margin: 0 auto;
 }
 #course .row{
-  width:100%;
+  width:100%
   height: auto;
   padding-bottom: 120px;
   padding-left: auto;
@@ -578,7 +579,7 @@ body, html {
   padding-bottom: 40px;
 }
 #course .container{
-  width:100%;
+  width:100%
   height: 200px;
   padding-left: 60px;
 }
@@ -635,7 +636,7 @@ body, html {
 
 .button-container {
   text-align: center;
-  padding-top: 12%;
+  padding-top: auto;
 }
 
 .neon-button {
@@ -1107,8 +1108,8 @@ transform: translateX(-50%);
 
 
 /* --- */
-.queries{
-  height:60px;
+.queries {
+  height: 60px;
   background-color: #232323;
   position: fixed;
   bottom: 0;
@@ -1120,48 +1121,80 @@ transform: translateX(-50%);
   z-index: 9999;
   padding-bottom: 2px;
 }
-.queries button{
-position: absolute;
-right: 400px;
+
+.queries button {
+  position: absolute;
+  right: 18%;
 }
-.a-see{
+
+.a-see {
   text-decoration: underline;
   text-decoration-color: #FBD2AA;
 }
-.a-emi{
+
+.a-emi {
   text-decoration: underline;
   text-decoration-color: white;
 }
-.right-text{
+
+.right-text {
   float: right;
   font-size: 20px;
-  padding-right: 100px;
+  padding-right: 2%;
   border-bottom: 30px;
   color: white;
 }
-.see{
+
+.see {
   padding-left: 30px;
   padding-right: 20px;
 }
-.whatsappsvg{
+
+.whatsappsvg {
   width: 40px;
   height: 40px;
   padding-bottom: 5px;
 }
 
-.section-divider{
+.section-divider {
   background-color: white;
   padding-bottom: 1px;
   border-bottom: 1px solid black;
 }
 
-/*footer*/
-footer{
-  height:450px;
-  background-color:  black;
-  padding-top: 20px;
+/* Media Queries */
+@media (max-width: 768px) {
+  .queries {
+    font-size: 14px;
+    padding-right: 120px;
+  }
+
+  .queries button {
+    position: relative;
+    right: auto;
+    margin-left: 10px;
+  }
+
+  .right-text {
+    font-size: 16px;
+    padding-right: 10px;
+    float: none;
+  }
+
+  .a-see,
+  .a-emi {
+    display: block;
+    float: none;
+    text-align: right;
+  }
 }
 
+/*footer*/
+footer{
+  height:auto;
+  background-color: black;
+  padding-top: 20px;
+}
 .text-white{
   text-decoration: none;
   line-height: 3rem;
@@ -1178,29 +1211,46 @@ footer{
 }
 
 
-.below-footer{
-  background-color: black;
-  display: inline-flex;
+.below-footer {
+  height:fit-content;
+  background-color: #000000;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  width:100%;
+}
+.privacypolicy{
+  margin-right: 100px;
 
 }
-.bfp{
-  padding-left: 40px;
+.bfp {
+  margin: 0;
+  font-size: 14px;
+  text-align: left;
+  margin-left: 100px;
 }
-.bfll{
-  padding-bottom: 17px;
-  padding-left: 400px;
+
+.bfll,
+.bflr {
+  color: white;
   text-decoration: none;
-  color: white;
+
 }
-.bflr{
-  padding-bottom: 17px;
-  padding-right: 240px;
-  padding-left: 30px;
-  text-decoration: none;
-  color: white;
+
+.bfll:hover,
+.bflr:hover {
+  text-decoration: underline;
 }
-.bfp{
-  color: white;
+
+@media (max-width: 768px) {
+  .below-footer {
+    flex-direction: column;
+  }
+
+  .bfll,
+  .bflr {
+    margin-top: 5px; /* Adjust the margin value as desired */
+  }
 }
