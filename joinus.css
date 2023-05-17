@@ -40,7 +40,7 @@
 
 
 
-#blackbox {
+/* #blackbox {
   background-image: linear-gradient(#003A70, black);
   padding-top: 50px;
 }
@@ -50,11 +50,11 @@
   background-color: black;
   border-radius: 25px;
   border: 1.5px solid white;
-}
+} */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) { */
   /* Adjustments for screens up to 768px wide */
-  #blackbox {
+  /* #blackbox {
     padding-top: 30px;
   }
 
@@ -62,21 +62,63 @@
     height: 200px;
     border-radius: 15px;
   }
-}
+} */
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) { */
   /* Adjustments for screens up to 480px wide */
-  #blackbox {
+  /* #blackbox {
     padding-top: 20px;
-  }
+  } */
 
-  .box {
+  /* .box {
     height: 150px;
     border-radius: 10px;
   }
+} */
+#blackbox{
+  background-image: linear-gradient(#003A70,black);
+  padding-top: 50px;
+}
+.box {
+  height: 302px;
+  background-color: black;
+  border-radius: 25px;
+  border:1.5px solid white;
+
+}
+.box .left-content {
+  width:650px;
+  padding-top: 30px;
+  padding-left: 100px;
+}
+.box p{
+  padding-top: 20px;
+  font-size: 17px;
+}
+.box img{
+  /* float: left; */
+  width: 300px;
+  height: 290px;
+  padding-top: 10px;
+  /* padding-left: 80px; */
+  /* padding-right: 80px; */
+}
+.box .right-gif img{
+  display: block;
+  margin: 0 auto;
+  padding-left: 20px;
+}
+.box h3 , p,a{
+  color:white;
 }
 
-
+.btn-outline-light-join {
+  /* margin-top:;
+  position: relative; */
+  
+  animation: shining 5s infinite;
+  color:#fff;
+}
 
 /*activities*/
 
